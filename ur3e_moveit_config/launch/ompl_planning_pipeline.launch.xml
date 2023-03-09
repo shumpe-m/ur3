@@ -25,6 +25,6 @@
   <param name="capabilities" value="$(arg capabilities)" />
   <param name="disable_capabilities" value="$(arg disable_capabilities)" />
 
-  <rosparam command="load" file="$(find ur_hande_ft300s_moveit_config)/config/ompl_planning.yaml"/>
+  <rosparam command="load" file="$(find ur3e_moveit_config)/config/ompl_planning.yaml"/>
 
 </launch>
