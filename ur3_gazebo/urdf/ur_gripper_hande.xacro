@@ -74,7 +74,7 @@
   <!-- Gripper -->
 
   <xacro:arg name="grasp_plugin" default="false" />
-  <xacro:include filename="$(find robotiq_description)/urdf/robotiq_hande_gripper.urdf.xacro" />
+  <xacro:include filename="$(find ur3_gazebo)/urdf/robotiq_hande_gripper.urdf.xacro" />
   
   <!-- Robotiq Coupler -->
   <!--  + Height added by the coupler: 8mm -->
