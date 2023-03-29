@@ -33,7 +33,7 @@
     <arg name="urdf_path" value="$(arg urdf_path)"/>
   </include> -->
 
-  <remap from="/follow_joint_trajectory" to="/arm_controller/follow_joint_trajectory"/>
+  <!-- <remap from="/follow_joint_trajectory" to="/arm_controller/follow_joint_trajectory"/> -->
   <!-- <include file="$(find ur_hande_moveit_config)/launch/ros_controllers.launch"/> -->
 
   <!-- If needed, broadcast static tf for robot root -->
