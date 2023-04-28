@@ -89,7 +89,6 @@
         <geometry>
             <mesh filename="package://ur3_gazebo/mesh/mount_1.stl" scale="0.001 0.001 0.001"/>
         </geometry>
-        <material name="black"/>
     </visual>
 
     <collision>
@@ -114,7 +113,6 @@
       <geometry>
         <mesh filename="package://robotiq_description/meshes/robotiq_85_coupler.stl" />
       </geometry>
-      <material name="flat_black"/>
     </visual>
     <collision>
       <geometry>
@@ -128,7 +126,6 @@
                iyy="7.85088161e-05" iyz="5.41105193e-07" izz="1.41819717e-04"/>
     </inertial>
   </link>
-
   <joint name="robotiq_coupler_joint" type="fixed">
     <origin xyz="0 0 0.004" rpy="0 0 ${-pi/2.0}" />
     <parent link="tool0"/>
@@ -137,7 +134,6 @@
   <gazebo reference="robotiq_coupler">
     <mu1>0.9</mu1>
     <mu2>0.9</mu2>
-    <material>Gazebo/FlatBlack</material>
   </gazebo>
 
   <!-- Equivalent to the OpenRAVE manipulator denso_robotiq_hande_gripper -->
