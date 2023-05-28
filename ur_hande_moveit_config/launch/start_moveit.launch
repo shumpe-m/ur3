@@ -33,7 +33,7 @@
     <arg name="urdf_path" value="$(arg urdf_path)"/>
   </include> -->
 
-  <remap from="/follow_joint_trajectory" to="/arm_controller/follow_joint_trajectory"/>
+  <!-- <remap from="/follow_joint_trajectory" to="/arm_controller/follow_joint_trajectory"/> -->
   <!-- <include file="$(find ur_hande_moveit_config)/launch/ros_controllers.launch"/> -->
 
   <!-- If needed, broadcast static tf for robot root -->
@@ -72,4 +72,6 @@
     <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
   </include>
 
+  <include file="$(find realsense2_camera)/launch/rs_rgbd.launch"></include>
+  <!-- <include file="$(find ur_hande_moveit_config)/launch/camera_pose.launch"></include> -->
 </launch>
