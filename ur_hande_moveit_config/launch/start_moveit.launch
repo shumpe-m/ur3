@@ -72,4 +72,6 @@
     <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
   </include>
 
+  <include file="$(find realsense2_camera)/launch/rs_rgbd.launch"></include>
+  <!-- <include file="$(find ur_hande_moveit_config)/launch/camera_pose.launch"></include> -->
 </launch>
