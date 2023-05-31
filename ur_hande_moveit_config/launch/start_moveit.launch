@@ -73,5 +73,6 @@
   </include>
 
   <include file="$(find realsense2_camera)/launch/rs_rgbd.launch"></include>
-  <!-- <include file="$(find ur_hande_moveit_config)/launch/camera_pose.launch"></include> -->
+
+  <include file="$(find ur_hande_moveit_config)/launch/camera_pose.launch"></include>
 </launch>
